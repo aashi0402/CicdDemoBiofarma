@@ -38,6 +38,7 @@
                         <applicationName>biofarmausecase9</applicationName>
                         <environment>Sandbox</environment>
                         <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
                 </configuration>
 				
