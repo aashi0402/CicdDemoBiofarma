@@ -15,11 +15,6 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-          bat "mvn test"
-      }
-    }
 
      stage('Deploy Development') {
       environment {
@@ -27,7 +22,7 @@ pipeline {
         APP_NAME = 'sandbox-biofarma-poc-cicd'
       }
       steps {
-            bat 'mvn -DskipTests deploy -P arm -Darm.target.name=local-4.4.0-ee -Danypoint.username="%DEPLOY_CREDS_USR%" -Danypoint.password="%DEPLOY_CREDS_PSW%"'
+            bat 'mvn -DskipTests deploy -DmuleDeploy "'
       }
     }
   }
