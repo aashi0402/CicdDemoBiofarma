@@ -22,7 +22,7 @@ pipeline {
         APP_NAME = 'sandbox-biofarma-poc-cicd'
       }
       steps {
-            bat 'mvn -DskipTests deploy -DmuleDeploy "'
+            bat 'mvn -DskipTests deploy -DmuleDeploy '
       }
     }
   }
