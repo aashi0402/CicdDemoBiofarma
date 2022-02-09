@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="biofarma-poc-usecase9Flow" doc:id="5e016cd2-5355-486e-ab2c-2d711f72d63e" >
+		<set-payload value='#["Hello World"]' doc:name="Set Payload" doc:id="416e46c9-4e4a-4e50-bd17-4b37bd9cf422" />
+		<logger level="INFO" doc:name="Logger" doc:id="00dcd364-c65c-4315-83fd-a858a09c7935" message="#[payload]"/>
+	</flow>
+</mule>
